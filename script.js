@@ -16,7 +16,6 @@ arr.forEach((button) => {
       string = string.slice(0, -1);
       input.value = string;
     } else if (e.target.innerHTML === "%") {
-      // Find the last operator and number in the string
       const regex = /(\d+(\.\d+)?[+\-*/]\d+(\.\d+)?)$/;
       const match = string.match(regex);
 
